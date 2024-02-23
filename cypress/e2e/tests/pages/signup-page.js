@@ -7,7 +7,7 @@ class SignUpPage {
     comfirmPasswordField = '#password-confirmation'
     createAccountButton = 'button[class="action submit primary"]'
     errorMessage = '.message-error'
-    filedErrorMessages = 'div.mage-error'
+    fieldErrorMessages = 'div.mage-error'
 
     inputFirstName(firstName) {
         cy.get(this.firstNameField).type(firstName)
@@ -37,12 +37,11 @@ class SignUpPage {
         cy.get(this.errorMessage).should('exist').contains(text)
     }
 
-    isFieldErrorMessagesContainsTextDisplayed(text) {
-        cy.get(this.filedErrorMessages).each((element) => {
+    areFieldErrorMessagesContainsTextDisplayed(text) {
+        cy.get(this.fieldErrorMessages).each((element) => {
             expect(element.text()).to.be.contains(text)
         })
     }
-
 }   
 
 module.exports = new SignUpPage()

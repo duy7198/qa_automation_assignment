@@ -45,5 +45,5 @@ Then('Sign up - Verify error message contains text {string} is displayed', (text
 })
 
 Then('Sign up - Verify field error messages contains text {string} are displayed', (text) => {
-    SignUpPage.isFieldErrorMessagesContainsTextDisplayed(text)
+    SignUpPage.areFieldErrorMessagesContainsTextDisplayed(text)
 })

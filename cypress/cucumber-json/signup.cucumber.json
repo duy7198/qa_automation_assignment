@@ -22,7 +22,7 @@
             "name": "Navigate Sign up page",
             "result": {
               "status": "passed",
-              "duration": 2484000000
+              "duration": 3101000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "Sign up - Input first name \"Duy\"",
             "result": {
               "status": "passed",
-              "duration": 176000000
+              "duration": 164000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "Sign up - Input last name \"Huynh\"",
             "result": {
               "status": "passed",
-              "duration": 198000000
+              "duration": 192000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "Sign up - Input random valid email",
             "result": {
               "status": "passed",
-              "duration": 322000000
+              "duration": 316000000
             }
           },
           {
@@ -62,7 +62,7 @@
             "name": "Sign up - Input password \"@abcd1234\"",
             "result": {
               "status": "passed",
-              "duration": 244000000
+              "duration": 250000000
             }
           },
           {
@@ -72,7 +72,7 @@
             "name": "Sign up - Input confirm password \"@abcd1234\"",
             "result": {
               "status": "passed",
-              "duration": 239000000
+              "duration": 240000000
             }
           },
           {
@@ -82,7 +82,7 @@
             "name": "Sign up - Click Create an account button",
             "result": {
               "status": "passed",
-              "duration": 2541000000
+              "duration": 2631000000
             }
           },
           {
@@ -92,7 +92,7 @@
             "name": "Account - Verify page is displayed",
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 15000000
             }
           }
         ]
@@ -112,7 +112,7 @@
             "name": "Navigate Sign up page",
             "result": {
               "status": "passed",
-              "duration": 1728000000
+              "duration": 1284000000
             }
           },
           {
@@ -122,7 +122,7 @@
             "name": "Sign up - Input first name \"Duy\"",
             "result": {
               "status": "passed",
-              "duration": 164000000
+              "duration": 169000000
             }
           },
           {
@@ -132,7 +132,7 @@
             "name": "Sign up - Input last name \"Huynh\"",
             "result": {
               "status": "passed",
-              "duration": 192000000
+              "duration": 190000000
             }
           },
           {
@@ -142,7 +142,7 @@
             "name": "Sign up - Input email \"test.cypress@gmail.com\"",
             "result": {
               "status": "passed",
-              "duration": 387000000
+              "duration": 409000000
             }
           },
           {
@@ -152,7 +152,7 @@
             "name": "Sign up - Input password \"@abcd1234\"",
             "result": {
               "status": "passed",
-              "duration": 245000000
+              "duration": 243000000
             }
           },
           {
@@ -162,7 +162,7 @@
             "name": "Sign up - Input confirm password \"@abcd1234\"",
             "result": {
               "status": "passed",
-              "duration": 230000000
+              "duration": 232000000
             }
           },
           {
@@ -172,7 +172,7 @@
             "name": "Sign up - Click Create an account button",
             "result": {
               "status": "passed",
-              "duration": 3281000000
+              "duration": 2781000000
             }
           },
           {
@@ -182,7 +182,7 @@
             "name": "Sign up - Verify error message contains text \"There is already an account with this email address. If you are sure that it is your email address, click here to get your password and access your account.\" is displayed",
             "result": {
               "status": "passed",
-              "duration": 545000000
+              "duration": 646000000
             }
           }
         ]
@@ -202,7 +202,7 @@
             "name": "Navigate Sign up page",
             "result": {
               "status": "passed",
-              "duration": 2114000000
+              "duration": 1460000000
             }
           },
           {
@@ -212,7 +212,7 @@
             "name": "Sign up - Click Create an account button",
             "result": {
               "status": "passed",
-              "duration": 86000000
+              "duration": 88000000
             }
           },
           {
@@ -221,8 +221,8 @@
             "line": 26,
             "name": "Sign up - Verify field error messages contains text \"This is a required field.\" are displayed",
             "result": {
-              "status": "passed",
-              "duration": 10000000
+              "status": "failed",
+              "error_message": "TypeError: _signupPage.default.areFieldErrorMessagesContainsTextDisplayed is not a function\n    at Context.eval (cypress/e2e/tests/steps/signup-steps.cy.js:48:15)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:3486:19)\n    at Promise._then (https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:1239:17)\n    at Promise._passThrough (https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:4110:17)\n    at Promise.lastly.Promise.finally (https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:4119:17)\n    at Object.onRunnableRun (https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:163045:53)\n    at $Cypress.action (https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:41042:28)\n    at Runnable.run (https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:145633:13)\n    at next (https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:155418:10)\n    at <unknown> (https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:155462:5)\n    at timeslice (https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:145973:27)"
             }
           }
         ]
