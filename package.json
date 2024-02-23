@@ -1,0 +1,28 @@
+{
+  "name": "qa_automation_assignment",
+  "version": "1.0.0",
+  "description": "web automation using cypress framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run",
+    "open": "npx cypress open",
+    "report": "node ./cypress/cucumber-html-report.js"
+  },
+  "author": "duy huynh",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.5",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "multiple-cucumber-html-reporter": "^3.6.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "step_definitions": "cypress/e2e/tests",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  }
+}

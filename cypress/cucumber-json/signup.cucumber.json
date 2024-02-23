@@ -1,0 +1,232 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Sign up",
+    "line": 1,
+    "id": "sign-up",
+    "tags": [],
+    "uri": "signup.feature",
+    "elements": [
+      {
+        "id": "sign-up;verify-user-can-create-an-account",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Verify user can create an account",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Navigate Sign up page",
+            "result": {
+              "status": "passed",
+              "duration": 2484000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "Sign up - Input first name \"Duy\"",
+            "result": {
+              "status": "passed",
+              "duration": 176000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Sign up - Input last name \"Huynh\"",
+            "result": {
+              "status": "passed",
+              "duration": 198000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Sign up - Input random valid email",
+            "result": {
+              "status": "passed",
+              "duration": 322000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Sign up - Input password \"@abcd1234\"",
+            "result": {
+              "status": "passed",
+              "duration": 244000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "Sign up - Input confirm password \"@abcd1234\"",
+            "result": {
+              "status": "passed",
+              "duration": 239000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "Sign up - Click Create an account button",
+            "result": {
+              "status": "passed",
+              "duration": 2541000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "Account - Verify page is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 13000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "sign-up;verify-show-error-message-if-user-input-exist-email",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Verify show error message if user input exist email",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Navigate Sign up page",
+            "result": {
+              "status": "passed",
+              "duration": 1728000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "Sign up - Input first name \"Duy\"",
+            "result": {
+              "status": "passed",
+              "duration": 164000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "Sign up - Input last name \"Huynh\"",
+            "result": {
+              "status": "passed",
+              "duration": 192000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "Sign up - Input email \"test.cypress@gmail.com\"",
+            "result": {
+              "status": "passed",
+              "duration": 387000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "Sign up - Input password \"@abcd1234\"",
+            "result": {
+              "status": "passed",
+              "duration": 245000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "Sign up - Input confirm password \"@abcd1234\"",
+            "result": {
+              "status": "passed",
+              "duration": 230000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "Sign up - Click Create an account button",
+            "result": {
+              "status": "passed",
+              "duration": 3281000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "Sign up - Verify error message contains text \"There is already an account with this email address. If you are sure that it is your email address, click here to get your password and access your account.\" is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 545000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "sign-up;verify-show-error-message-if-user-click-create-an-account-button-without-inputting-any-info",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Verify show error message if user click Create an account button without inputting any info",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Navigate Sign up page",
+            "result": {
+              "status": "passed",
+              "duration": 2114000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "Sign up - Click Create an account button",
+            "result": {
+              "status": "passed",
+              "duration": 86000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "Sign up - Verify field error messages contains text \"This is a required field.\" are displayed",
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
