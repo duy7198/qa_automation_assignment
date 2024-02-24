@@ -8,6 +8,10 @@ class SignUpPage {
     createAccountButton = 'button[class="action submit primary"]'
     errorMessage = '.message-error'
     fieldErrorMessages = 'div.mage-error'
+    confirmPasswordError = '#password-confirmation-error'
+    passwordError = '#password-error'
+    emailError = '#email_address-error'
+
 
     inputFirstName(firstName) {
         cy.get(this.firstNameField).type(firstName)
@@ -41,6 +45,18 @@ class SignUpPage {
         cy.get(this.fieldErrorMessages).each((element) => {
             expect(element.text()).to.be.contains(text)
         })
+    }
+
+    isConfirmPasswordErrorMessageContainsTextDisplayed(text) {
+        cy.get(this.confirmPasswordError).should('exist').contains(text)
+    }
+
+    isPasswordErrorMessageContainsTextDisplayed(text) {
+        cy.get(this.passwordError).should('exist').contains(text)
+    }
+
+    isEmailErrorMessageContainsTextDisplayed(text) {
+        cy.get(this.emailError).should('exist').contains(text)
     }
 }   
 

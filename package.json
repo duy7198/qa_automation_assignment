@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "npx cypress run",
+    "chrome": "npx cypress run --browser chrome",
     "open": "npx cypress open",
-    "report": "node ./cypress/cucumber-html-report.js"
+    "report": "node ./cypress/cucumber-html-report.js && open ./cypress/cucumber-reports/index.html"
   },
   "author": "duy huynh",
   "license": "ISC",

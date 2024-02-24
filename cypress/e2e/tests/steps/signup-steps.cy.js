@@ -40,10 +40,22 @@ Then('Account - Verify page is displayed', () => {
     AccountPage.isDisplayed()
 })
 
-Then('Sign up - Verify error message contains text {string} is displayed', (text) => {
-    SignUpPage.isErrorMessageContainsTextDisplayed(text)
+Then('Sign up - Verify error message contains the following text is displayed', (docString) => {
+    SignUpPage.isErrorMessageContainsTextDisplayed(docString)
 })
 
 Then('Sign up - Verify field error messages contains text {string} are displayed', (text) => {
     SignUpPage.areFieldErrorMessagesContainsTextDisplayed(text)
+})
+
+Then('Sign up - Verify confirm passoword error message contains text {string} is displayed', (text) => {
+    SignUpPage.isConfirmPasswordErrorMessageContainsTextDisplayed(text)
+})
+
+Then('Sign up - Verify passoword error message contains the following text is displayed', (text) => {
+    SignUpPage.isPasswordErrorMessageContainsTextDisplayed(text)
+})
+
+Then('Sign up - Verify email error message contains the following text is displayed', (text) => {
+    SignUpPage.isEmailErrorMessageContainsTextDisplayed(text)
 })
