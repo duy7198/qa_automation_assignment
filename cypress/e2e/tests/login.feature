@@ -1,4 +1,4 @@
-Feature:
+Feature: Login
 
     Background:
         Given Navigate Login page
