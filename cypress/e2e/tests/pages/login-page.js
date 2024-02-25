@@ -35,6 +35,11 @@ class LogInPage {
     clickCreateAnAccountButton() {
         cy.get(this.createAnAccountButton).click()
     }
+
+    isDisplayedWithTtitle(title) {
+        cy.location('pathname').should('includes', this.url)
+        cy.title().should('eq', title)
+    }
 }
 
 module.exports = new LogInPage()

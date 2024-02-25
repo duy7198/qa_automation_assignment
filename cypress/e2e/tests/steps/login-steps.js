@@ -28,3 +28,7 @@ And('Login - Click Forget password link', () => {
 And('Login - Click Create an account button', () => {
     LogInPage.clickCreateAnAccountButton()
 })
+
+Then('Login - Verify page is displayed with title {string}', (title) => {
+    LogInPage.isDisplayedWithTtitle(title)
+})
