@@ -2,7 +2,7 @@ import {Given, When, Then, And} from "cypress-cucumber-preprocessor/steps"
 import LogInPage from './../pages/login-page'
 
 Given('Navigate Login page', () => {
-    cy.visit('/customer/account/login')
+    LogInPage.navigatePage()
 })
 
 When('Login - Input email {string}', (email) => {
@@ -15,4 +15,16 @@ And('Login - Input password {string}', (password) => {
 
 And('Login - Click Sign In button', () => {
     LogInPage.clickSignInButton()
+})
+
+Then('Login - Verify error message contains the following text is displayed', (text) => {
+    LogInPage.isErrorMessageContainsTextDisplayed(text)
+})
+
+And('Login - Click Forget password link', () => {
+    LogInPage.clickForgotPasswordLink()
+})
+
+And('Login - Click Create an account button', () => {
+    LogInPage.clickCreateAnAccountButton()
 })

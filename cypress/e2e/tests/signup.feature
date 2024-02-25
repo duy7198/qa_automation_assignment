@@ -1,4 +1,4 @@
-Feature: Sign up
+Feature: Sign Up
 
     Background:
         Given Navigate Sign up page
@@ -10,7 +10,7 @@ Feature: Sign up
         And Sign up - Input password "@abcd1234"
         And Sign up - Input confirm password "@abcd1234"
         And Sign up - Click Create an account button
-        Then Account - Verify page is displayed
+        Then Account - Verify page is displayed with title "My Account"
 
     Scenario: Verify show error message if user input exist email
         When Sign up - Input first name "Duy"

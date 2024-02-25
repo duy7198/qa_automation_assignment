@@ -1,5 +1,5 @@
-class AccountPage {
-    url = '/customer/account/'
+class ForgotPasswordPage {
+    url = '/customer/account/forgotpassword/'
 
     isPageDisplayedWithTitle(title) {
         cy.location('pathname').should('eq', this.url)
@@ -7,4 +7,4 @@ class AccountPage {
     }
 }
 
-module.exports = new AccountPage()
+module.exports = new ForgotPasswordPage()

@@ -1,4 +1,5 @@
 class SignUpPage {
+    url = '/customer/account/create/'
     
     firstNameField = '#firstname'
     lastNameField = '#lastname'
@@ -12,6 +13,9 @@ class SignUpPage {
     passwordError = '#password-error'
     emailError = '#email_address-error'
 
+    navigatePage() {
+        cy.visit(this.url)
+    }
 
     inputFirstName(firstName) {
         cy.get(this.firstNameField).type(firstName)
@@ -38,7 +42,7 @@ class SignUpPage {
     }
     
     isErrorMessageContainsTextDisplayed(text) {
-        cy.get(this.errorMessage).should('exist').contains(text)
+        cy.get(this.errorMessage).should('contain.text', text)
     }
 
     areFieldErrorMessagesContainsTextDisplayed(text) {
@@ -48,15 +52,20 @@ class SignUpPage {
     }
 
     isConfirmPasswordErrorMessageContainsTextDisplayed(text) {
-        cy.get(this.confirmPasswordError).should('exist').contains(text)
+        cy.get(this.confirmPasswordError).should('contain.text', text)
     }
 
     isPasswordErrorMessageContainsTextDisplayed(text) {
-        cy.get(this.passwordError).should('exist').contains(text)
+        cy.get(this.passwordError).should('contain.text', text)
     }
 
     isEmailErrorMessageContainsTextDisplayed(text) {
-        cy.get(this.emailError).should('exist').contains(text)
+        cy.get(this.emailError).should('contain.text', text)
+    }
+
+    isDisplayedWithTtitle(title) {
+        cy.location('pathname').should('eq', this.url)
+        cy.title().should('eq', title)
     }
 }   
 

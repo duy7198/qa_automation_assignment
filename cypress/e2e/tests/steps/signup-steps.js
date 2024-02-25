@@ -1,10 +1,8 @@
-/// <reference types="cypress" />
 import {Given, When, Then, And} from "cypress-cucumber-preprocessor/steps"
 import SignUpPage from '../pages/signup-page'
-import AccountPage from '../pages/account-page'
 
 Given('Navigate Sign up page', () => {
-    cy.visit('/customer/account/create')
+    SignUpPage.navigatePage()
 })
 
 When('Sign up - Input first name {string}', (firstname) => {
@@ -36,10 +34,6 @@ And('Sign up - Click Create an account button', () => {
     SignUpPage.clickCreateAccountButton()
 })
 
-Then('Account - Verify page is displayed', () => {
-    AccountPage.isDisplayed()
-})
-
 Then('Sign up - Verify error message contains the following text is displayed', (docString) => {
     SignUpPage.isErrorMessageContainsTextDisplayed(docString)
 })
@@ -58,4 +52,8 @@ Then('Sign up - Verify passoword error message contains the following text is di
 
 Then('Sign up - Verify email error message contains the following text is displayed', (text) => {
     SignUpPage.isEmailErrorMessageContainsTextDisplayed(text)
+})
+
+Then('Sign up - Verify page is displayed with title {string}', (title) => {
+    SignUpPage.isDisplayedWithTtitle(title)
 })
